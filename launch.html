@@ -19,6 +19,7 @@
 <!-- smart on fhir client -->
 <script src="8147366a.fhir-client.min.js"></script>
 <script>
+  FHIR.oauth2.settings.fullSessionStorageSupport = false;
   FHIR.oauth2.authorize({
     "client_id": "my_web_app",  // hard coded client_id to work with SMART on FHIR starter server
     "scope":  "user/*.* launch/patient"
